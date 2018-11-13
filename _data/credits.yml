@@ -1,0 +1,125 @@
+#
+# License codes. Add more as you need them.
+#
+licenses:
+  perm:
+    name : special, by permission
+  tm:
+    name : Trademark
+  sil:
+    name : SIL Open Font License, 1.1
+    icon :
+    url  : 
+  mit:
+    name : MIT License
+    icon :
+    url  :
+  ccb2:
+    name : Creative Commons Attribution 2.0 Generic
+    icon :
+    url  : https://creativecommons.org/licenses/by/2.0/
+  ccb3:
+    name : Creative Commons Attribution 3.0 Unported
+    icon :
+    url  : https://creativecommons.org/licenses/by/3.0/
+  ccbsa2:
+    name : Creative Commons Attribution-ShareAlike 2.0
+    icon :
+    url  : https://creativecommons.org/licenses/by-sa/2.0/
+  ccbnc2:
+    name : Creative Commons Attribution-NonCommercial 2.0 Generic
+    icon :
+    url  : https://creativecommons.org/licenses/by-nc/2.0/
+  ccbncsa2:
+    name : Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic
+    icon :
+    url  : https://creativecommons.org/licenses/by-nc-sa/2.0/
+  apa2:
+    name : Apache License, 2.0
+    icon :
+    url  :
+  gplv3:
+    name : Gnu Public License, 3.0
+    icon :
+    url  :
+#
+# 'lic' values correspond to the keys in the license hash above
+# 
+creds:
+  - for : Update Design for PyTorch Challenge
+    by  : alexanderluna
+    url : https://github.com/alexanderluna
+    lic : mit
+  - for : Design and theme
+    by  : '@ajlkn'
+    url : http://html5up.net/spectral
+    lic : ccb3
+  - for : Mods for a Jekyll blog
+    by  : arkadianriver
+    url : http://arkadianriver.com
+    lic : mit
+  - for : Icons
+    by  : Dave Gandy
+    url : https://fortawesome.github.io/Font-Awesome/
+    lic : mit
+  - for : Syntax-highlighting
+    by  : Pygments.org
+    url : http://pygments.org
+    lic : mit
+  - for : Lora font
+    by  : Cyreal
+    url : http://www.cyreal.org
+    lic : sil
+  - for : OpenSans font
+    by  : Google
+    url : https://www.google.com/fonts/attribution
+    lic : apa2
+  - for : Build framework
+    by  : Jekyll
+    url : https://jekyllrb.com/
+    lic : mit
+  - for : jQuery validation
+    by  : Jörn Zaefferer
+    url : http://jqueryvalidation.org/
+    lic : mit
+  - for : jQuery
+    by  : jQuery Foundation
+    url : https://jquery.com/
+    lic : mit
+#
+inspiration:
+  - name : Michael Rose
+    url  : https://github.com/mmistakes
+  - name : David Ollerhead
+    url  : https://github.com/oller
+  - name : Bud Parr
+    url  : https://github.com/budparr
+  - name : Vladimir Zhbanko
+    url  : https://twitter.com/vladdsm
+  - name : Adam Garrett-Harris
+    url  : https://twitter.com/agarrharr
+#
+other-image-credit: All other images are public domain.
+
+image-credit:
+  - src : /images/lesson.jpg
+    by  : Helloquence
+    url : https://unsplash.com/photos/EPppwcVTZEo
+    lic : ccb2
+  - src : /images/math.jpg
+    by  : Antoine Dautry
+    url : https://unsplash.com/photos/05A-kdOH6Hw
+    lic : ccb2
+  - src : /images/python.jpg
+    by  : Chris Ried
+    url : https://unsplash.com/photos/ieic5Tq8YMk
+    lic : ccb2
+  - src : /images/deeplearning.jpg
+    by  : Dominik Scythe
+    url : https://unsplash.com/photos/Sot0f3hQQ4Y
+    lic : ccbsa2
+  - src : /images/banner.jpg
+    by  : James Owen
+    url : https://unsplash.com/photos/d1ardVRHGH4
+    lic : ccb2
+

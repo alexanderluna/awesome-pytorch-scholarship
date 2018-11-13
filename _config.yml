@@ -1,0 +1,83 @@
+# In addition to these settings, there is a file _data/tokens-template.yml
+# that you'll want to customize for your site. It's named 'tokens' because
+# that was it's original purpose, but because tokens.yml is .gitexcluded, it's
+# a good place to store your site-specific data that you'd rather not have
+# forked or cloned. Of course, that means you'd want to back it up elsewhere.
+
+# Also, for your post bylines, add author info for yourself in `_data/authors.yml`.
+# (Using that method instead of site.owner, in case your posts get cloned with your repo.)
+
+# Site settings
+title: PyTorch Scholarship Hub
+description: Notes, Resources and Guides to finish the challenge
+owner:
+  name: PyTorch Scholarship Hub
+  url: "http://example.com" # your URL
+first_published: 2018 
+url: "http://example.com"
+baseurl: "" # the subpath of your site, e.g. /blog
+            # Note you'll have to move your robots.txt to the root if you want it used.
+            # And list multiple sitemaps if there are other subdirectories you want indexed
+            # besides this blog.
+lang: en-us
+
+# on landing page
+# - set the greeting only if you want to display the first green section
+greeting:
+  title: Let's finish the challenge
+  text: Whether you struggle with Python, Numpy, Matplot, PyTorch, Math or Deep learning you will find the right resources here.
+
+# on all pages (and the first three you list display with greeting, if included)
+social:
+  fire: https://pytorch.org
+  paperclip: https://sites.google.com/udacity.com/pytorch-scholarship-facebook/home?bsft_eid=b79c3be9-39ba-50c5-c5c6-a0855c187059&utm_campaign=sch_600_2018-11-09_ndxxx_pytorch-firstday_na&utm_source=blueshift&utm_medium=email&utm_content=sch_600_2018-11-09_ndxxx_pytorch-firstday_na&bsft_clkid=87f929a0-8840-43c6-8633-cab47fb68c02&bsft_uid=3a1a1d9b-b40b-4d6c-907e-ff18df36c5cd&bsft_mid=59731882-bd5d-4f71-8846-963ef7f46295 
+  github: https://github.com/arnas/awesome-pytorch-scholarship
+
+# - title for your blog's featured posts
+features-title: Featured topics
+
+# choose where to put back and next links:
+# top, bottom, both, none
+navlinks: bottom
+
+# Github pages posts future posts by default.
+# You'll want to move the user guide posts to _drafts if you set this to true.
+# future: false
+
+# If you have custom extensions, specifically includes/_my/custom.scss,
+# set this to yes
+custom_extensions: no
+
+# Build settings
+permalink: /:categories/:title.html
+markdown: kramdown
+#sass:
+#  style: compressed
+exclude: ['site.bat','compose.rb','README.md']
+include: ['_pages','.htaccess']
+collections:
+  category:
+    output: true
+defaults:
+  - scope:
+      path: _pages
+    values:
+      layout: page
+      #permalink: /:slug/ # dunna work. See github.com/jekyll/jekyll/issues/2280
+  - scope:
+      path: _posts
+    values:
+      layout: post
+  - scope:
+      path: _drafts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+
+# to initialize arrays in assignments (assign myarr = site.empty_array)
+# (easier to grok than assign myarr = '' | split',')
+empty_array: []

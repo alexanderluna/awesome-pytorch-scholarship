@@ -1,0 +1,28 @@
+---
+key: 1
+title: Udacity Lessons
+permalink: /lessons/
+excerpt: Find notes, links and responses for the Udacity Lessons.
+image: lesson.jpg
+background-image: lesson.jpg
+---
+
+{% if site.categories.lessons %}
+<div class="table-wrapper">
+    <table>
+        <tbody>
+            {% include fn_groupsort_reverse.html unsorted=site.categories.lessons groupby='priority' sortby='date' %}
+            {% for post in sorted_list %}
+            <tr>
+                <td><b><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></b></td>
+                <td>{{ post.date | date: "%b %Y" }}</td>
+                <td>{{ post.excerpt | strip_html | truncatewords: 12 }}</td>
+                <td>
+                    {% include techlist.html %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}

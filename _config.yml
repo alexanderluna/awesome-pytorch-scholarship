@@ -12,10 +12,10 @@ title: PyTorch Scholarship Hub
 description: Notes, Resources and Guides to finish the challenge
 owner:
   name: PyTorch Scholarship Hub
-  url: "http://example.com" # your URL
+  url: "https://github.com/arnas/awesome-pytorch-scholarship" # your URL
 first_published: 2018 
-url: "http://example.com"
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://alexanderluna.github.io/awesome-pytorch-scholarship"
+baseurl: "/awesome-pytorch-scholarship" # the subpath of your site, e.g. /blog
             # Note you'll have to move your robots.txt to the root if you want it used.
             # And list multiple sitemaps if there are other subdirectories you want indexed
             # besides this blog.
